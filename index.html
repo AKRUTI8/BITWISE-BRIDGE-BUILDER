@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary-Decimal Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Binary-Decimal Converter</h1>
+            <p>Convert between binary and decimal number systems</p>
+        </header>
+        
+        <div class="converter-card">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="binary-to-decimal">Binary to Decimal</button>
+                <button class="tab-button" data-tab="decimal-to-binary">Decimal to Binary</button>
+            </div>
+            
+            <div class="tab-content active" id="binary-to-decimal">
+                <div class="input-group">
+                    <label for="binary-input">Binary Input</label>
+                    <input type="text" id="binary-input" placeholder="Enter binary number (e.g. 10101)">
+                    <p class="error" id="binary-error"></p>
+                </div>
+                <div class="result-group">
+                    <label>Decimal Result</label>
+                    <div class="result" id="decimal-result"></div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="decimal-to-binary">
+                <div class="input-group">
+                    <label for="decimal-input">Decimal Input</label>
+                    <input type="text" id="decimal-input" placeholder="Enter decimal number (e.g. 42)">
+                    <p class="error" id="decimal-error"></p>
+                </div>
+                <div class="result-group">
+                    <label>Binary Result</label>
+                    <div class="result" id="binary-result">Result will appear here</div>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button id="convert-button">Convert</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Binary Bridge Builder</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
